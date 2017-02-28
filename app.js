@@ -61,7 +61,7 @@ function processPostBack(event){
               console.log("Error getting user's name: " + error);
           }else{
               var bodyObj = JSON.parse(body);
-              name = bodyObj.first_name;
+              var name = bodyObj.first_name;
               greeting = "Hi " + name + ".";
           }
           var message = greeting + "My name is Raspa, im a dog bro/a";
