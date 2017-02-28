@@ -1,0 +1,21 @@
+{
+  "name": "pschatbot",
+  "version": "1.0.0",
+  "description": "Places bot Server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
+    "start": "node app.js"
+  },
+  "author": "Oscar Morales",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.5",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}
