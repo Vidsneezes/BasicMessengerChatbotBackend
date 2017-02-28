@@ -50,6 +50,7 @@ function processPostBack(event){
   if(payload === "Greeting"){
     //Get user's first name from the User Profile api
     // and include it in the greeting
+    sendMessage(senderId,{text:"yo"});
     request({
       url: "https://graph.facebook.com/v2.6/" + senderId,
       qs: {
@@ -61,8 +62,7 @@ function processPostBack(event){
               console.log("Error getting user's name: " + error);
           }else{
               var bodyObj = JSON.parse(body);
-              var name = bodyObj.first_name;
-              greeting = "Hi " + name + ".";
+              greeting = "Hi " + bodyObj.first_name + ".";
           }
           var message = greeting + "My name is Raspa, im a dog bro/a";
           sendMessage(senderId,{text:message});
